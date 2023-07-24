@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+        body{
+            background-image: url('dimi.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #btn1{
+            width: 70px;
+            height: 70px;
+            background-color: #707070;
+            color: #707070;
+            border-radius: 100px;
+            position: absolute;
+            top:7%;
+            right:53%;
+
+        }
+        .btn2{
+            width: 70px;
+            height: 70px;
+            background-color: #707070;
+            color: #707070;
+            border-radius: 100px;
+            position: absolute;
+            top:17%;
+            right:53%;
+        }
+        .btn3{
+            width: 70px;
+            height: 70px;
+            background-color: #707070;
+            color: #707070;
+            border-radius: 100px;
+            position: absolute;
+            top:27%;
+            right:53%;
+        }
+        #btn4{
+            width: 70px;
+            height: 70px;
+            background-color: #707070;
+            color: #707070;
+            border-radius: 100px;
+            position: absolute;
+            top:17%;
+            right:30%; 
+        }
+        .p1{
+            color: #ffffff;
+            position: absolute;
+            top:8%;
+            right:50%;
+            font-family: 'Outfit', sans-serif;
+        }
+        .p2{
+            color: #ffffff;
+            position: absolute;
+            top:18%;
+            right:50.5%;
+            font-family: 'Outfit', sans-serif;
+        }
+        .p3{
+            color: #ffffff;
+            position: absolute;
+            top:28%;
+            right:44.8%;
+            font-family: 'Outfit', sans-serif;
+        }
+
+    </style>
+    <script>
+        function play1() {
+        var audio = new Audio('Law.mp3');
+        audio.play();
+        }
+        function play2() {
+        var audio = new Audio('Rom.mp3');
+        audio.play();
+        }
+        function play3() {
+        var audio = new Audio('Tot.mp3');
+        audio.play();
+        }
+        function pause1() {
+        var audio = new Audio();
+        audio.pause();
+        }
+    </script>
+</head>
+<body>
+   <button type="button" id="btn1"  onclick="play1()"><i class="fa-solid fa-play fa-2xl" style="color: #03fc4e;"></i></button>
+   <button type="button"class="btn2" onclick="play2()"><i class="fa-solid fa-play fa-2xl" style="color: #03fc4e;"></i></button>
+   <button type="button"class="btn3" onclick="play3()"><i class="fa-solid fa-play fa-2xl" style="color: #03fc4e;"></i></button>
+   <button type="button" id="btn4" onclick="pause1()"><i class="fa-solid fa-pause fa-2xl" style="color: #f21c1c;"></i></button>
+   <p class="p1">Vibes</p>
+   <p class="p2">Rain</p>
+   <p class="p3">Train of thoughts</p>
+</body>
+</html>
